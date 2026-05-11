@@ -105,6 +105,14 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
+            <a 
+              href="/resume.pdf" 
+              download="Akhil_Makwana_Resume.pdf"
+              onClick={() => setIsOpen(false)}
+              className="mt-4 flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-emerald-500 text-white font-bold transition-all"
+            >
+              Resume
+            </a>
           </div>
         </div>
       )}

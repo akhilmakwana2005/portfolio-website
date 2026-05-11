@@ -33,7 +33,7 @@ const TechMarquee = () => {
             x: ["0%", "-50%"],
           }}
           transition={{
-            duration: 30,
+            duration: 50,
             ease: "linear",
             repeat: Infinity,
           }}

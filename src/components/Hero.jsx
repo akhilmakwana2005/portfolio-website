@@ -9,7 +9,7 @@ const Hero = () => {
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
-  const [typingSpeed, setTypingSpeed] = useState(150);
+  const [typingSpeed, setTypingSpeed] = useState(200);
 
   const roles = useMemo(() => ["Full Stack Developer", "Tech Enthusiast", "Problem Solver"], []);
 
@@ -87,7 +87,7 @@ const Hero = () => {
               move: {
                 enable: true,
                 random: false,
-                speed: 1,
+                speed: 0.6,
                 straight: false,
               },
               number: {
