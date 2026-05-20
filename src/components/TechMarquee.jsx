@@ -25,7 +25,7 @@ const TechMarquee = () => {
   const duplicatedTech = [...technologies, ...technologies];
 
   return (
-    <div className="w-full overflow-hidden bg-slate-100/50 dark:bg-slate-900/30 py-10 mt-10 rounded-2xl border border-slate-200 dark:border-slate-800">
+    <div className="w-full overflow-hidden bg-slate-100/50 dark:bg-[#030014]/20 py-8 my-10 rounded-2xl border border-slate-200 dark:border-indigo-500/10 backdrop-blur-sm">
       <div className="flex whitespace-nowrap">
         <motion.div
           className="flex space-x-12 px-6"

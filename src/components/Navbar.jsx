@@ -76,10 +76,10 @@ const Navbar = () => {
             
             <button 
               onClick={toggleDarkMode} 
-              className="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 focus:outline-none transition-colors"
+              className="p-2 rounded-lg text-yellow-500 dark:text-yellow-400 hover:bg-slate-200 dark:hover:bg-slate-800 focus:outline-none transition-colors"
               aria-label="Toggle dark mode"
             >
-              {isDarkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
+              {isDarkMode ? <FiSun size={20} className="fill-yellow-400/10" /> : <FiMoon size={20} className="fill-yellow-500/10" />}
             </button>
 
             <div className="md:hidden">

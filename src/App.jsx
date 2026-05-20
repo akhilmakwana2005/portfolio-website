@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 import Hero from './components/Hero';
+import TechMarquee from './components/TechMarquee';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
@@ -21,6 +22,7 @@ function App() {
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Hero />
+        <TechMarquee />
         <About />
         <Skills />
         <Projects />
