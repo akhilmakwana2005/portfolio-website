@@ -10,10 +10,12 @@ import Education from './components/Education';
 import Contact from './components/Contact';
 import ScrollToTop from './components/ScrollToTop';
 import CustomCursor from './components/CustomCursor';
+import StarBackground from './components/StarBackground';
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans overflow-x-hidden transition-colors duration-300">
+    <div className="min-h-screen bg-transparent text-slate-900 dark:text-slate-100 font-sans overflow-x-hidden transition-colors duration-300">
+      <StarBackground />
       <CustomCursor />
       <Navbar />
       
@@ -33,3 +35,4 @@ function App() {
 }
 
 export default App;
+

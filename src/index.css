@@ -15,9 +15,9 @@ body {
 }
 
 .dark .glass-effect {
-  background-color: rgba(30, 41, 59, 0.5); /* slate-800/50 */
+  background-color: rgba(3, 0, 20, 0.5);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(51, 65, 85, 0.5); /* slate-700/50 */
+  border: 1px solid rgba(99, 102, 241, 0.2);
 }
 
 .glass-card {
@@ -30,10 +30,10 @@ body {
 }
 
 .dark .glass-card {
-  background-color: rgba(30, 41, 59, 0.4); /* slate-800/40 */
+  background-color: rgba(3, 0, 20, 0.4);
   backdrop-filter: blur(16px);
-  border: 1px solid rgba(51, 65, 85, 0.5); /* slate-700/50 */
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.1); /* xl */
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
 }
 
 .glass-card:hover {
@@ -43,3 +43,65 @@ body {
 .dark .glass-card:hover {
   border-color: rgba(71, 85, 105, 0.5); /* slate-600/50 */
 }
+
+/* Star Background Styles */
+.star {
+  position: absolute;
+  border-radius: 9999px;
+  box-shadow: 0 0 8px 1px rgba(100, 116, 139, 0.2);
+  transition: opacity 0.5s ease;
+}
+
+.dark .star {
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+}
+
+.meteor {
+  position: absolute;
+  border-radius: 9999px;
+  background-image: linear-gradient(to right, rgba(148, 163, 184, 0.6), transparent);
+  box-shadow: 0 0 8px 2px rgba(148, 163, 184, 0.15);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dark .meteor {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.95), transparent);
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.35);
+}
+
+/* Custom Keyframe Animations */
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes meteor {
+  0% {
+    opacity: 0;
+    transform: rotate(215deg) translate(0, 0);
+  }
+  12% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(215deg) translate(-650px, 0);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle ease-in-out infinite;
+}
+
+.animate-meteor {
+  animation: meteor linear infinite;
+}
+

@@ -1,25 +1,14 @@
 import React, { useEffect, useState, useMemo } from "react";
 import { motion } from "framer-motion";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim";
 import { FaArrowDown, FaCode, FaRocket, FaDownload } from "react-icons/fa";
 
 const Hero = () => {
-  const [init, setInit] = useState(false);
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(200);
 
   const roles = useMemo(() => ["Full Stack Developer", "Tech Enthusiast", "Problem Solver"], []);
-
-  useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadSlim(engine);
-    }).then(() => {
-      setInit(true);
-    });
-  }, []);
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -57,52 +46,6 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center pt-20"
     >
-      {init && (
-        <Particles
-          id="tsparticles"
-          className="absolute inset-0 z-0"
-          options={{
-            background: {
-              color: { value: "transparent" },
-            },
-            fpsLimit: 120,
-            interactivity: {
-              events: {
-                onHover: { enable: true, mode: "repulse" },
-                resize: true,
-              },
-              modes: {
-                repulse: { distance: 100, duration: 0.4 },
-              },
-            },
-            particles: {
-              color: { value: "#10b981" },
-              links: {
-                color: "#3b82f6",
-                distance: 150,
-                enable: true,
-                opacity: 0.2,
-                width: 1,
-              },
-              move: {
-                enable: true,
-                random: false,
-                speed: 0.6,
-                straight: false,
-              },
-              number: {
-                density: { enable: true, area: 800 },
-                value: 60,
-              },
-              opacity: { value: 0.3 },
-              shape: { type: "circle" },
-              size: { value: { min: 1, max: 3 } },
-            },
-            detectRetina: true,
-          }}
-        />
-      )}
-
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
