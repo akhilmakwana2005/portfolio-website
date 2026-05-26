@@ -67,7 +67,7 @@ const Navbar = () => {
           
           <div className="flex items-center space-x-4">
             <a 
-              href="/resume.pdf" 
+              href="/Akhil_Makwana_Resume.pdf" 
               download="Akhil_Makwana_Resume.pdf"
               className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-bold transition-all shadow-lg shadow-emerald-500/20 active:scale-95"
             >
@@ -106,7 +106,7 @@ const Navbar = () => {
               </a>
             ))}
             <a 
-              href="/resume.pdf" 
+              href="/Akhil_Makwana_Resume.pdf" 
               download="Akhil_Makwana_Resume.pdf"
               onClick={() => setIsOpen(false)}
               className="mt-4 flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-emerald-500 text-white font-bold transition-all"
