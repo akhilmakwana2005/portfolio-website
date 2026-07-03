@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ChatBot from './components/ChatBot';
 
 import Hero from './components/Hero';
 import TechMarquee from './components/TechMarquee';
@@ -9,7 +10,6 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Education from './components/Education';
 import Contact from './components/Contact';
-import ScrollToTop from './components/ScrollToTop';
 import CustomCursor from './components/CustomCursor';
 import StarBackground from './components/StarBackground';
 
@@ -31,7 +31,7 @@ function App() {
       </main>
 
       <Footer />
-      <ScrollToTop />
+      <ChatBot />
     </div>
   );
 }
