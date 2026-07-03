@@ -5,53 +5,33 @@ import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 const Projects = () => {
   const projects = [
     {
-      title: 'Softude - Website Landing Page',
-      description: 'Softude is a global IT & digital-services company that offers enterprise-level solutions such as web and mobile app development, digital transformation, AI & cloud services.',
+      title: 'AI-Job-Hunter',
+      description: 'An AI-powered job tracking and hunting platform built to help users manage applications efficiently.',
+      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=800',
+      tags: ['JavaScript', 'AI', 'Web Development'],
+      links: {
+        github: 'https://github.com/akhilmakwana2005/AI-Job-Hunter',
+        live: '#'
+      }
+    },
+    {
+      title: 'Vyaparpro',
+      description: 'A comprehensive business management and billing solution designed for modern shops and enterprises.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
-      tags: ['React.js', 'Framer Motion', 'TailwindCSS', 'Vite'],
+      tags: ['JavaScript', 'Business', 'Management'],
       links: {
-        github: 'https://github.com/abhicodes01/Softude_Redesign_LandingPage',
-        live: 'https://softude.netlify.app/'
-      }
-    },
-    {
-      title: 'Mech2Door',
-      description: 'A full-stack MERN web app connecting users with verified local mechanics, featuring real-time booking, admin verification, and secure authentication for trusted on-demand service.',
-      image: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&q=80&w=800',
-      tags: ['Node.js', 'MongoDB', 'Express.js', 'PostMan', 'TailwindCSS', 'React.js'],
-      links: {
-        github: '#',
+        github: 'https://github.com/akhilmakwana2005/Vyaparpro',
         live: '#'
       }
     },
     {
-      title: 'VirtualR - Developer Tools Website',
-      description: 'A dynamic and responsive virtual reality showcase built with React, featuring sleek UI and interactive components.',
-      image: 'https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&q=80&w=800',
-      tags: ['Javascript', 'TailwindCSS', 'React.js', 'Vite'],
+      title: 'Foodie',
+      description: 'A dynamic online food ordering system allowing users to browse menus and place orders seamlessly.',
+      image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=800',
+      tags: ['PHP', 'HTML', 'CSS', 'MySQL'],
       links: {
-        github: '#',
-        live: 'https://virtualr-react.netlify.app/'
-      }
-    },
-    {
-      title: 'Jarvis - AI Personal Assistant',
-      description: 'Jarvis listens to voice commands, responds in real-time with speech output, and features a dynamic 3D animated interface for an immersive experience.',
-      image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800',
-      tags: ['React.js', 'TailwindCSS', 'Three.js', 'Gemini API', 'SpeechRecognition'],
-      links: {
-        github: 'https://github.com/abhicodes01/voice-assistant-jarvis',
+        github: 'https://github.com/akhilmakwana2005/foodie',
         live: '#'
-      }
-    },
-    {
-      title: 'SynergyTop - Website Landing Page',
-      description: 'SynergyTop is presented as a full-service IT agency offering services such as custom software development, web development, eCommerce & mobile-app development.',
-      image: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=800',
-      tags: ['React.js', 'TailwindCSS', 'Framer Motion', 'Vite'],
-      links: {
-        github: 'https://github.com/abhicodes01/StrategyTop_Redesign_LandingPage',
-        live: 'https://synergytop.netlify.app/'
       }
     }
   ];

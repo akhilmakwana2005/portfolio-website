@@ -13,7 +13,7 @@ export const chatbotKnowledge = [
   },
   {
     keywords: ["project", "projects", "work", "portfolio"],
-    response: "Akhil has worked on several awesome projects! Some notable ones are often listed in the 'Projects' section above. Feel free to scroll up and check them out! 🚀",
+    response: "Akhil has worked on several awesome projects! Some notable ones include 'AI-Job-Hunter' (an AI-powered job tracking platform), 'Vyaparpro' (a business management solution), and 'Foodie' (an online food ordering system). Feel free to scroll up to the 'Projects' section to check them out! 🚀",
   },
   {
     keywords: ["contact", "email", "hire", "freelance", "message", "connect"],
