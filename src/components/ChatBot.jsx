@@ -82,7 +82,7 @@ const ChatBot = () => {
             </div>
 
             {/* Chat Body */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-5 scrollbar-thin scrollbar-thumb-[#2e323b] scrollbar-track-transparent">
+            <div className="flex-1 overflow-y-auto p-4 space-y-5 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               {messages.map((msg, idx) => (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
